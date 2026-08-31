@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Quicksand:wght@500;600;700&display=swap');
+
+:root {
+  --primary-color: #3B4282; 
+  --primary-hover: #2C3263;
+  --bg-main: #FFF8F0; 
+  --bg-panel: #FFFFFF;
+  --text-dark: #313669;
+  --text-muted: #8E92A4;
+  --border-light: #E5E7EB;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-card: 0 8px 30px rgba(49, 54, 105, 0.08);
+  --font-heading: 'Quicksand', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}

@@ -1,0 +1,156 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  background-color: #fff5f2; /* Tono cálido del mockup */
+  font-family: var(--font-body);
+}
+.sidebar {
+  width: 260px;
+  background-color: white;
+  border-right: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+.logoIcon {
+  background-color: #4338ca;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brandText h2 {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin: 0;
+}
+.brandText span {
+  font-size: 0.7rem;
+  color: #15803d;
+  font-weight: 600;
+}
+/* ... mantén lo anterior intacto hasta llegar a .nav ... */
+
+.nav { display: flex; flex-direction: column; padding: 1.5rem 0; flex: 1; overflow-y: auto; overflow-x: hidden; }
+
+.navItem { 
+  display: flex; 
+  align-items: center; 
+  gap: 1rem; 
+  padding: 0.875rem 1.5rem; 
+  color: var(--text-muted); 
+  text-decoration: none; 
+  font-weight: 500; 
+  font-size: 0.9375rem; 
+  position: relative; 
+  white-space: nowrap; /* EVITA EL SALTO DE LÍNEA */
+}
+
+.navItem:hover { background-color: #F9FAFB; }
+
+.navItem.active { 
+  background-color: #4338CA; 
+  color: white; 
+  border-radius: 0 20px 20px 0; 
+  margin-right: 1rem; 
+}
+
+.label {
+  flex: 1; /* EMPUJA EL BADGE A LA DERECHA */
+  overflow: hidden;
+  text-overflow: ellipsis; /* AÑADE "..." SI EL TEXTO ES MUY LARGO */
+}
+
+.badge { 
+  background-color: #F59E0B; 
+  color: white; 
+  font-size: 0.7rem; 
+  font-weight: 700; 
+  min-width: 20px; 
+  height: 20px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 10px; 
+  padding: 0 0.3rem;
+}
+
+/* ... mantén el resto del CSS intacto ... */
+.logout {
+  border-top: 1px solid var(--border-light);
+  padding: 1.5rem;
+}
+.logout a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.topbar {
+  height: 70px;
+  background-color: white;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.breadcrumbs {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.breadcrumbs strong {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+.topActions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.clientModeBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4338ca;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.avatar {
+  width: 36px;
+  height: 36px;
+  background-color: #4338ca;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.pageContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
+}
